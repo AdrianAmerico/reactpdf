@@ -9,9 +9,9 @@ function PDF() {
     return (
         <>
             <div ref={ref}>
-                {/* <PDFViewer width="800px" height="600px"> */}
+                <PDFViewer width="800px" height="600px">
                     <PdfPage />
-                {/* </PDFViewer> */}
+                </PDFViewer>
             </div>
             <Pdf targetRef={ref} filename="teste.pdf">
                 {({ toPdf }) => <button onClick={toPdf}>capture</button>}
