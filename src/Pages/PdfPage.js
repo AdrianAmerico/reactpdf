@@ -58,8 +58,8 @@ function PdfPage() {
                     </View>
                 </View>
 
-                <View style={styles.energyInfo}>
-                    <View>
+                <View style={styles.energyContainer}>
+                    <View style={styles.energyTitle}>
                         <Text style={styles.bold}>DESCRIÇÃO DO CONSUMO DE ENERGIA</Text>
                     </View>
 

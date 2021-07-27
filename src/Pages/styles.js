@@ -58,12 +58,22 @@ export const styles = StyleSheet.create({
         justifyContent: "space-around",
         alignItems: "stretch",
         flex: "0 1",
-        padding: "5px"
+        padding: "5px 25px"
     },
     paymentInfo: {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        textAlign: "center"
+    },
+    energyContainer: {
+        display: "grid",
+        gridTemplateColumn: "repeat(4, 1fr)",
+        gridTemplateRows: "repeat(4, 1fr)"
+    },
+    energyTitle: {
+        gridColumn: "1 / -1",
+        background: "#ccc",
         textAlign: "center"
     },
     bold: {
