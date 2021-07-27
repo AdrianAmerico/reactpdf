@@ -1,14 +1,72 @@
 import { StyleSheet } from '@react-pdf/renderer';
 
-// Create styles
 export const styles = StyleSheet.create({
     page: {
-        flexDirection: 'row',
-        backgroundColor: '#666'
+        display: "flex",
+        flexDirection: 'column',
+        padding: "15px"
     },
-    section: {
-        margin: 10,
-        padding: 10,
-        flexGrow: 1
+    titlePage: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        fontWeight: "bold"
+    },
+    headerInfo: {
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        margin: "30px auto",
+        width: "90%",
+    },
+    clientDataLeftSide: {
+        display: "flex",
+        flexDirection: "column",
+    },
+    clientDataRightSide: {
+        width: "70px",
+        height: "70px"
+    },
+    monthSection: {
+        border: "1px solid black",
+        textAlign: "center",
+        padding: "5px 0"
+    },
+    mainContent: {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        margin: "10px 0"
+    },
+    clientInfoContainer: {
+        display: "flex",
+        flexDirection: "column",
+    },
+    clientInfo: {
+        display: "flex",
+        flexDirection: "column",
+        border: "1px solid black",
+        margin: "10px 0",
+        width: "500px",
+        padding: "10px",
+    },
+    clientInfoContainerRightSide: {
+        display: "flex",
+        flexDirection: "column",
+        border: "1px solid black",
+        justifyContent: "space-around",
+        alignItems: "stretch",
+        flex: "0 1",
+        padding: "5px"
+    },
+    paymentInfo: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center"
+    },
+    bold: {
+        fontWeight: "bold"
     }
 });
