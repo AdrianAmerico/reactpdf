@@ -13,56 +13,60 @@ function PdfPage() {
                         <Text>FATURA | CONTA DE ENERGIA ELÉTRICA</Text>
                     </View>
 
-                    <View>
-                        <View>
-                            <Text>Shopping</Text>
+                    <View style={styles.headerInfo}>
+                        <View style={styles.clientDataLeftSide}>
+                            <Text style={{ fontWeight: "bold" }}>Shopping</Text>
                             <Text>endereço</Text>
                             <Text>CEP</Text>
                             <Text>CNPJ</Text>
+                        </View>
+
+                        <View style={styles.clientDataRightSide}>
+                            <img src="https://i.stack.imgur.com/5dG21.png" alt="" style={{ width: "100%", height: "100%" }} />
                         </View>
                     </View>
                 </View>
 
                 <View style={styles.monthSection}>
-                    <Text>FATURA MÊS DE ABRIL</Text>
+                    <Text style={styles.bold}>FATURA MÊS DE ABRIL</Text>
                 </View>
 
                 <View style={styles.mainContent}>
-                    <View>
-                        <View>
-                            <Text>DADOS DO CLIENTE</Text>
+                    <View style={styles.clientInfoContainer}>
+                        <View style={styles.clientInfo}>
+                            <Text style={styles.bold}>DADOS DO CLIENTE</Text>
                             <Text>NOME: AAAAAAA</Text>
                             <Text>CPF/CNPJ</Text>
                         </View>
 
-                        <View>
-                            <Text>ENDEREÇO</Text>
+                        <View style={styles.clientInfo}>
+                            <Text style={styles.bold}>ENDEREÇO</Text>
                             <Text>Rua teste123</Text>
                         </View>
                     </View>
 
-                    <View>
-                        <View>
-                            <Text>DATA DE VENCIMENTO</Text>
-                            <Text>10/05/2021</Text>
+                    <View style={styles.clientInfoContainerRightSide}>
+                        <View style={styles.paymentInfo}>
+                            <Text style={styles.bold}>DATA DE VENCIMENTO</Text>
+                            <Text style={styles.bold}>10/05/2021</Text>
                         </View>
 
-                        <View>
-                            <Text>TOTAL A PAGAR (R$)</Text>
-                            <Text>127,13</Text>
+                        <View style={styles.paymentInfo}>
+                            <Text style={styles.bold}>TOTAL A PAGAR (R$)</Text>
+                            <Text style={styles.bold}>127,13</Text>
                         </View>
                     </View>
                 </View>
 
-                <View style={styles.energyInfo}>
-                    <View>
-                        <Text>DESCRIÇÃO DO CONSUMO DE ENERGIA</Text>
+                <View style={styles.energyContainer}>
+                    <View style={styles.energyTitle}>
+                        <Text style={styles.bold}>DESCRIÇÃO DO CONSUMO DE ENERGIA</Text>
                     </View>
 
                     {/* Titulos */}
-                    <Text>QUANTIDADE</Text>
-                    <Text>PREÇO(R$)</Text>
-                    <Text>VALOR(R$)</Text>
+                    <Text style={styles.bold}>QUANTIDADE</Text>
+                    <Text style={styles.bold}>PREÇO(R$)</Text>
+                    <Text style={styles.bold}>VALOR(R$)</Text>
 
                     {/* Coluna 2 linha 1-3 */}
                     <Text>Consumo em kWh</Text>
@@ -78,7 +82,7 @@ function PdfPage() {
                     <Text>25,03</Text>
 
                     {/* Coluna 4 linha 1-3 */}
-                    <Text>VALOR TOTAL</Text>
+                    <Text style={styles.bold}>VALOR TOTAL</Text>
                     <Text>127,13</Text>
                 </View>
 
