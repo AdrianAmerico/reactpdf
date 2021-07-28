@@ -10,10 +10,9 @@ function PDF() {
         <>
             <div ref={ref}>
                 {/* <PDFViewer width="800px" height="600px"> */}
-                <div style={{ width: "800px", height: "600px", background: "#f2f4f5" }}>
+                <div style={{ width: "210mm", height: "297mm", background: "#f2f4f5" }}>
                     <PdfPage />
                 </div>
-
                 {/* </PDFViewer> */}
             </div>
             <Pdf targetRef={ref} filename="teste.pdf">

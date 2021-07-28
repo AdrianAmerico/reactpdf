@@ -100,13 +100,10 @@ function PdfPage() {
                 </View>
 
                 <View style={styles.footer}>
-                    <View>
-                        <Text>DADOS PARA PAGAMENTO</Text>
-
-                        <View>
-                            <Text>Banco: 01</Text>
-                            <Text>Conta: 3294329</Text>
-                        </View>
+                    <View style={styles.footerAlign}>
+                        <Text style={styles.footerTitle}>DADOS PARA PAGAMENTO</Text>
+                        <Text>Banco: 01</Text>
+                        <Text>Conta: 3294329</Text>
                     </View>
                 </View>
 
