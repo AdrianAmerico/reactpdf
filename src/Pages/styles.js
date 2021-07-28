@@ -71,18 +71,42 @@ export const styles = StyleSheet.create({
         gridTemplateColumns: "repeat(4, 1fr)",
         gridTemplateRows: "repeat(5, 1fr)",
         border: "1px solid black",
-        gridGap: "1px",
+        gridGap: "2px",
+        backgroundColor: "#000",
+        borderBottom: "2px solid black",
+        borderTop: "2px solid black"
     },
     energyTitle: {
         gridColumn: "1 / -1",
         background: "#ccc",
-        textAlign: "center"
+        textAlign: "center",
+        borderLeft: "0.5px solid black",
+        borderRight: "0.5px solid black"
     },
     energyColumn: {
         display: "grid",
         gridColumn: "1 / -1",
-        gridTemplateColumns: "repeat(4, 1fr)",
-        textAlign: "center"
+        gridTemplateColumns: "3fr 1fr 1fr 1fr",
+        textAlign: "center",
+    },
+    energyGridTitle: {
+        textAlign: "start",
+        fontWeight: "bold",
+        backgroundColor: "#fff",
+        borderLeft: "0.5px solid black",
+        borderRight: "0.5px solid black"
+    },
+    energyGridTitleColumn: {
+        backgroundColor: "#fff",
+        borderLeft: "0.5px solid black",
+        borderRight: "0.5px solid black",
+        fontWeight: "bold"
+    },
+    energyGridCell: {
+        textAlign: "center",
+        backgroundColor: "#fff",
+        borderLeft: "0.5px solid black",
+        borderRight: "0.5px solid black"
     },
     bold: {
         fontWeight: "bold",

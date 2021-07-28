@@ -22,7 +22,7 @@ function PdfPage() {
                         </View>
 
                         <View style={styles.clientDataRightSide}>
-                            <img src="https://i.stack.imgur.com/5dG21.png" alt="" style={{ width: "100%", height: "100%" }} />
+                            {/* Imagem de loja a ser adicionada em um proximo update */}
                         </View>
                     </View>
                 </View>
@@ -65,36 +65,37 @@ function PdfPage() {
 
                     {/* Titulos */}
 
-                    <View style={{ gridColumn: "2/-1", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", textAlign: "center" }}>
-                        <Text style={styles.bold}>QUANTIDADE</Text>
-                        <Text style={styles.bold}>PREÇO(R$)</Text>
-                        <Text style={styles.bold}>VALOR(R$)</Text>
+                    <View style={styles.energyColumn}>
+                        <Text style={styles.energyGridCell}></Text>
+                        <Text style={styles.energyGridTitleColumn}>QUANTIDADE</Text>
+                        <Text style={styles.energyGridTitleColumn}>PREÇO(R$)</Text>
+                        <Text style={styles.energyGridTitleColumn}>VALOR(R$)</Text>
                     </View>
 
                     {/* Coluna 2 linha 1-3 */}
 
                     <View style={styles.energyColumn}>
-                        <Text>Consumo em kWh</Text>
-                        <Text>123</Text>
-                        <Text>0,45786341</Text>
-                        <Text>102,10</Text>
+                        <Text style={styles.energyGridTitle}>Consumo em kWh</Text>
+                        <Text style={styles.energyGridCell}>123</Text>
+                        <Text style={styles.energyGridCell}>0,45786341</Text>
+                        <Text style={styles.energyGridCell}>102,10</Text>
                     </View>
 
                     {/* Coluna 3 linha 1-3 */}
 
                     <View style={styles.energyColumn}>
-                        <Text>Contrib.Ilum.PúblicaMunicipal</Text>
-                        <Text></Text>
-                        <Text></Text>
-                        <Text>25,03</Text>
+                        <Text style={styles.energyGridTitle}>Contrib.Ilum.PúblicaMunicipal</Text>
+                        <Text style={styles.energyGridCell}></Text>
+                        <Text style={styles.energyGridCell}></Text>
+                        <Text style={styles.energyGridCell}>25,03</Text>
                     </View>
                     {/* Coluna 4 linha 1-3 */}
 
-                    <View  style={styles.energyColumn}>
-                        <Text style={styles.bold}>VALOR TOTAL</Text>
-                        <Text></Text>
-                        <Text></Text>
-                        <Text>127,13</Text>
+                    <View style={styles.energyColumn}>
+                        <Text style={styles.energyGridTitle}>VALOR TOTAL</Text>
+                        <Text style={styles.energyGridCell}></Text>
+                        <Text style={styles.energyGridCell}></Text>
+                        <Text style={styles.energyGridCell}>127,13</Text>
                     </View>
                 </View>
 
@@ -112,6 +113,6 @@ function PdfPage() {
             </Page>
         </Document>
     )
-
 }
+
 export default PdfPage;
