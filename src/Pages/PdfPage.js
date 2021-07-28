@@ -64,26 +64,38 @@ function PdfPage() {
                     </View>
 
                     {/* Titulos */}
-                    <Text style={styles.bold}>QUANTIDADE</Text>
-                    <Text style={styles.bold}>PREÇO(R$)</Text>
-                    <Text style={styles.bold}>VALOR(R$)</Text>
+
+                    <View style={{ gridColumn: "2/-1", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", textAlign: "center" }}>
+                        <Text style={styles.bold}>QUANTIDADE</Text>
+                        <Text style={styles.bold}>PREÇO(R$)</Text>
+                        <Text style={styles.bold}>VALOR(R$)</Text>
+                    </View>
 
                     {/* Coluna 2 linha 1-3 */}
-                    <Text>Consumo em kWh</Text>
-                    <Text>123</Text>
-                    <Text>0,45786341</Text>
-                    <Text>102,10</Text>
+
+                    <View style={styles.energyColumn}>
+                        <Text>Consumo em kWh</Text>
+                        <Text>123</Text>
+                        <Text>0,45786341</Text>
+                        <Text>102,10</Text>
+                    </View>
 
                     {/* Coluna 3 linha 1-3 */}
 
-                    <Text>Contrib.Ilum.PúblicaMunicipal</Text>
-                    <Text></Text>
-                    <Text></Text>
-                    <Text>25,03</Text>
-
+                    <View style={styles.energyColumn}>
+                        <Text>Contrib.Ilum.PúblicaMunicipal</Text>
+                        <Text></Text>
+                        <Text></Text>
+                        <Text>25,03</Text>
+                    </View>
                     {/* Coluna 4 linha 1-3 */}
-                    <Text style={styles.bold}>VALOR TOTAL</Text>
-                    <Text>127,13</Text>
+
+                    <View  style={styles.energyColumn}>
+                        <Text style={styles.bold}>VALOR TOTAL</Text>
+                        <Text></Text>
+                        <Text></Text>
+                        <Text>127,13</Text>
+                    </View>
                 </View>
 
                 <View style={styles.footer}>

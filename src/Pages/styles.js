@@ -68,15 +68,23 @@ export const styles = StyleSheet.create({
     },
     energyContainer: {
         display: "grid",
-        gridTemplateColumn: "repeat(4, 1fr)",
-        gridTemplateRows: "repeat(4, 1fr)"
+        gridTemplateColumns: "repeat(4, 1fr)",
+        gridTemplateRows: "repeat(5, 1fr)",
+        border: "1px solid black",
+        gridGap: "1px",
     },
     energyTitle: {
         gridColumn: "1 / -1",
         background: "#ccc",
         textAlign: "center"
     },
+    energyColumn: {
+        display: "grid",
+        gridColumn: "1 / -1",
+        gridTemplateColumns: "repeat(4, 1fr)",
+        textAlign: "center"
+    },
     bold: {
-        fontWeight: "bold"
+        fontWeight: "bold",
     }
 });
