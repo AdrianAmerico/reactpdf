@@ -95,13 +95,13 @@ export const styles = StyleSheet.create({
         textAlign: "center",
     },
     energyGridTitle: {
-        textAlign: "start",
+        // textAlign: "start", // mdss...
         fontWeight: "bold",
-        backgroundColor: "#fff",
+        backgroundColor: "#00ff00",
         borderLeft: "0.5px solid black",
         borderRight: "0.5px solid black",
         padding: "10px 0",
-        
+
     },
     energyGridTitleColumn: {
         backgroundColor: "#fff",

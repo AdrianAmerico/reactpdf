@@ -1,5 +1,6 @@
 import React from 'react';
 import { Page, Text, View, Document } from '@react-pdf/renderer';
+import { PDFViewer } from '@react-pdf/renderer';
 import { styles } from './styles';
 
 function PdfPage() {
@@ -15,7 +16,7 @@ function PdfPage() {
 
                     <View style={styles.headerInfo}>
                         <View style={styles.clientDataLeftSide}>
-                            <Text style={{ fontWeight: "bold" }}>Shopping</Text>
+                            <Text style={styles.bold}>Shopping</Text>
                             <Text>endereço</Text>
                             <Text>CEP</Text>
                             <Text>CNPJ</Text>
