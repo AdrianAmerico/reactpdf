@@ -4,29 +4,28 @@ export const styles = StyleSheet.create({
     page: {
         display: "flex",
         flexDirection: 'column',
-        padding: "15px"
+        padding: "15px",
+        fontSize: "12pt",
+        margin: "0",
+        boxSizing: "border-box"
+    },
+    header: {
     },
     titlePage: {
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
         justifyContent: "center",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        alignItems: "center"
     },
     headerInfo: {
         display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        margin: "30px auto",
+        margin: "10px auto",
         width: "90%",
     },
     clientDataLeftSide: {
         display: "flex",
         flexDirection: "column",
-    },
-    clientDataRightSide: {
-        width: "70px",
-        height: "70px"
     },
     monthSection: {
         border: "1px solid black",
@@ -37,45 +36,53 @@ export const styles = StyleSheet.create({
     mainContent: {
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between",
-        margin: "20px 0"
+        // justifyContent: "space-between",
+        margin: "20px 0",
+        width: "100%"
     },
     clientInfoContainer: {
         display: "flex",
         flexDirection: "column",
+        flex: "3"
     },
     clientInfo: {
         display: "flex",
         flexDirection: "column",
         border: "1px solid black",
         margin: "10px 0",
-        width: "500px",
         padding: "10px",
+    },
+    mainContentCenter: {
+         flex: "1"
     },
     clientInfoContainerRightSide: {
         display: "flex",
         flexDirection: "column",
         border: "1px solid black",
-        justifyContent: "space-around",
-        alignItems: "stretch",
-        flex: "0 1",
-        padding: "5px 25px"
+        justifyContent: "center",
+        flex: "1.2 1",
+        textAlign: "center",
+        padding: "0 5px"
     },
     paymentInfo: {
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        textAlign: "center"
+        margin:"2.5px 0",
+        fontSize: "10pt"
     },
 
     energyContainer: {
-
+        display: "flex",
+        border: "0.5 solid black",
+        width: "100%",
     },
     energyTitle: {
-    
+    border: "0.5px solid black",
+    textAlign: "center",
+    padding: "1px 0"
     },
     energyColumn: {
-   
+
     },
     energyGridTitle: {
 
@@ -85,7 +92,7 @@ export const styles = StyleSheet.create({
 
     },
     energyGridCell: {
-  
+
     },
 
     footer: {
@@ -104,6 +111,6 @@ export const styles = StyleSheet.create({
         textAlign: "center"
     },
     bold: {
-        fontWeight: "bold",
+        fontWeight: "700",
     }
 });

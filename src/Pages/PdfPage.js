@@ -20,10 +20,6 @@ function PdfPage() {
                             <Text>CEP</Text>
                             <Text>CNPJ</Text>
                         </View>
-
-                        <View style={styles.clientDataRightSide}>
-                            {/* Imagem de loja a ser adicionada em um proximo update */}
-                        </View>
                     </View>
                 </View>
 
@@ -44,7 +40,9 @@ function PdfPage() {
                             <Text>Rua teste123</Text>
                         </View>
                     </View>
+                    <View style={styles.mainContentCenter}>
 
+                    </View>
                     <View style={styles.clientInfoContainerRightSide}>
                         <View style={styles.paymentInfo}>
                             <Text style={styles.bold}>DATA DE VENCIMENTO</Text>
@@ -53,7 +51,7 @@ function PdfPage() {
 
                         <View style={styles.paymentInfo}>
                             <Text style={styles.bold}>TOTAL A PAGAR (R$)</Text>
-                            <Text style={styles.bold}>127,13</Text>
+                            <Text style={{ fontWeight: "bold" }}>127,13</Text>
                         </View>
                     </View>
                 </View>
