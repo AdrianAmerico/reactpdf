@@ -8,14 +8,12 @@ const ref = React.createRef();
 function PDF() {
     return (
         <>
-            <div ref={ref}>
-                {/* <PDFViewer width="800px" height="600px"> */}
-                <div style={{ width: "800px", height: "600px", background: "#f2f4f5" }}>
+            {/* <PDFViewer width="1000" height="1000"> */}
+                {/* <div ref={ref}> */}
                     <PdfPage />
-                </div>
+                {/* </div> */}
 
-                {/* </PDFViewer> */}
-            </div>
+            {/* </PDFViewer> */}
             <Pdf targetRef={ref} filename="teste.pdf">
                 {({ toPdf }) => <button onClick={toPdf}>capture</button>}
             </Pdf>
