@@ -1,6 +1,5 @@
 import React from 'react';
 import { Page, Text, View, Document } from '@react-pdf/renderer';
-import { PDFViewer } from '@react-pdf/renderer';
 import { styles } from './styles';
 
 function PdfPage() {
