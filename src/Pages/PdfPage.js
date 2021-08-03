@@ -1,6 +1,5 @@
 import React from 'react';
 import { Page, Text, View, Document } from '@react-pdf/renderer';
-import { PDFViewer } from '@react-pdf/renderer';
 import { styles } from './styles';
 
 function PdfPage() {
@@ -20,10 +19,6 @@ function PdfPage() {
                             <Text>endereço</Text>
                             <Text>CEP</Text>
                             <Text>CNPJ</Text>
-                        </View>
-
-                        <View style={styles.clientDataRightSide}>
-                            {/* Imagem de loja a ser adicionada em um proximo update */}
                         </View>
                     </View>
                 </View>
@@ -45,6 +40,8 @@ function PdfPage() {
                             <Text>Rua teste123</Text>
                         </View>
                     </View>
+                    {/* Apenas para posicionamento utilizando Flex Grow */}
+                    <View style={styles.mainContentCenter} />
 
                     <View style={styles.clientInfoContainerRightSide}>
                         <View style={styles.paymentInfo}>
@@ -54,7 +51,7 @@ function PdfPage() {
 
                         <View style={styles.paymentInfo}>
                             <Text style={styles.bold}>TOTAL A PAGAR (R$)</Text>
-                            <Text style={styles.bold}>127,13</Text>
+                            <Text style={{ fontWeight: "bold" }}>127,13</Text>
                         </View>
                     </View>
                 </View>
@@ -67,7 +64,7 @@ function PdfPage() {
                     {/* Titulos */}
 
                     <View style={styles.energyColumn}>
-                        <Text style={styles.energyGridCell}></Text>
+                        <Text style={styles.energyGridTitle}></Text>
                         <Text style={styles.energyGridTitleColumn}>QUANTIDADE</Text>
                         <Text style={styles.energyGridTitleColumn}>PREÇO(R$)</Text>
                         <Text style={styles.energyGridTitleColumn}>VALOR(R$)</Text>

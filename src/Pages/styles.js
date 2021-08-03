@@ -4,29 +4,28 @@ export const styles = StyleSheet.create({
     page: {
         display: "flex",
         flexDirection: 'column',
-        padding: "15px"
+        padding: "15px",
+        fontSize: "12pt",
+        margin: "0",
+        boxSizing: "border-box"
+    },
+    header: {
     },
     titlePage: {
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
         justifyContent: "center",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        alignItems: "center"
     },
     headerInfo: {
         display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        margin: "30px auto",
+        margin: "10px auto",
         width: "90%",
     },
     clientDataLeftSide: {
         display: "flex",
         flexDirection: "column",
-    },
-    clientDataRightSide: {
-        width: "70px",
-        height: "70px"
     },
     monthSection: {
         border: "1px solid black",
@@ -37,90 +36,79 @@ export const styles = StyleSheet.create({
     mainContent: {
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between",
-        margin: "20px 0"
+        // justifyContent: "space-between",
+        margin: "20px 0",
+        width: "100%"
     },
     clientInfoContainer: {
         display: "flex",
         flexDirection: "column",
+        flex: "3"
     },
     clientInfo: {
         display: "flex",
         flexDirection: "column",
         border: "1px solid black",
         margin: "10px 0",
-        width: "500px",
         padding: "10px",
+    },
+    mainContentCenter: {
+        flex: "1"
     },
     clientInfoContainerRightSide: {
         display: "flex",
         flexDirection: "column",
         border: "1px solid black",
-        justifyContent: "space-around",
-        alignItems: "stretch",
-        flex: "0 1",
-        padding: "5px 25px"
+        justifyContent: "center",
+        flex: "1.2 1",
+        textAlign: "center",
+        padding: "0 5px"
     },
     paymentInfo: {
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        textAlign: "center"
+        margin: "2.5px 0",
+        fontSize: "10pt"
     },
+
     energyContainer: {
-        display: "grid",
-        gridTemplateColumns: "repeat(4, 1fr)",
-        gridTemplateRows: "repeat(5, 1fr)",
-        border: "1px solid black",
-        gridGap: "2px",
-        backgroundColor: "#000",
-        borderBottom: "2px solid black",
-        borderTop: "2px solid black",
-        margin: "25px 0"
+        display: "flex",
+        border: "0.5 solid black",
+        width: "100%",
     },
     energyTitle: {
-        gridColumn: "1 / -1",
-        background: "#ccc",
-        textAlign: "center",
-        borderLeft: "0.5px solid black",
-        borderRight: "0.5px solid black",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center"
+        border: "0.5px solid black",
+        alignItems: "center",
+        padding: "1px 0"
     },
     energyColumn: {
-        display: "grid",
-        gridColumn: "1 / -1",
-        gridTemplateColumns: "3fr 1fr 1fr 1fr",
-        textAlign: "center",
-    },
-    energyGridTitle: {
-        // textAlign: "start", // mdss...
-        fontWeight: "bold",
-        backgroundColor: "#00ff00",
-        borderLeft: "0.5px solid black",
-        borderRight: "0.5px solid black",
-        padding: "10px 0",
+        display: "flex",
+        justifyContent: "space-between",
+        flexDirection: "row"
 
     },
-    energyGridTitleColumn: {
-        backgroundColor: "#fff",
-        borderLeft: "0.5px solid black",
-        borderRight: "0.5px solid black",
-        fontWeight: "bold",
-        display: "flex",
+    energyGridTitle: {
+        flex: "1.2",
+        border: "0.5px solid black",
         alignItems: "center",
-        justifyContent: "center"
+        padding: "1px 0"
+    },
+    energyGridTitleColumn: {
+        flex: "1",
+        textAlign: "center",
+        border: "0.5px solid black",
+        alignItems: "center",
+        padding: "1px 0"
     },
     energyGridCell: {
-        textAlign: "center",
-        backgroundColor: "#fff",
-        borderLeft: "0.5px solid black",
-        borderRight: "0.5px solid black",
+        flex: "1",
         display: "flex",
+        textAlign: "center",
+        border: "0.5px solid black",
         alignItems: "center",
-        justifyContent: "center"
+        padding: "1px 0"
     },
+
     footer: {
         border: "1px solid black",
         margin: "50px 0",
@@ -137,6 +125,6 @@ export const styles = StyleSheet.create({
         textAlign: "center"
     },
     bold: {
-        fontWeight: "bold",
+        fontWeight: "700",
     }
 });
