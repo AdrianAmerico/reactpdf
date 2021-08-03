@@ -40,9 +40,9 @@ function PdfPage() {
                             <Text>Rua teste123</Text>
                         </View>
                     </View>
-                    <View style={styles.mainContentCenter}>
+                    {/* Apenas para posicionamento utilizando Flex Grow */}
+                    <View style={styles.mainContentCenter} />
 
-                    </View>
                     <View style={styles.clientInfoContainerRightSide}>
                         <View style={styles.paymentInfo}>
                             <Text style={styles.bold}>DATA DE VENCIMENTO</Text>
@@ -64,7 +64,7 @@ function PdfPage() {
                     {/* Titulos */}
 
                     <View style={styles.energyColumn}>
-                        <Text style={styles.energyGridCell}></Text>
+                        <Text style={styles.energyGridTitle}></Text>
                         <Text style={styles.energyGridTitleColumn}>QUANTIDADE</Text>
                         <Text style={styles.energyGridTitleColumn}>PREÇO(R$)</Text>
                         <Text style={styles.energyGridTitleColumn}>VALOR(R$)</Text>

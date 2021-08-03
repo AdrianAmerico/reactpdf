@@ -53,7 +53,7 @@ export const styles = StyleSheet.create({
         padding: "10px",
     },
     mainContentCenter: {
-         flex: "1"
+        flex: "1"
     },
     clientInfoContainerRightSide: {
         display: "flex",
@@ -67,7 +67,7 @@ export const styles = StyleSheet.create({
     paymentInfo: {
         display: "flex",
         flexDirection: "column",
-        margin:"2.5px 0",
+        margin: "2.5px 0",
         fontSize: "10pt"
     },
 
@@ -77,22 +77,36 @@ export const styles = StyleSheet.create({
         width: "100%",
     },
     energyTitle: {
-    border: "0.5px solid black",
-    textAlign: "center",
-    padding: "1px 0"
+        border: "0.5px solid black",
+        alignItems: "center",
+        padding: "1px 0"
     },
     energyColumn: {
+        display: "flex",
+        justifyContent: "space-between",
+        flexDirection: "row"
 
     },
     energyGridTitle: {
-
-
+        flex: "1.2",
+        border: "0.5px solid black",
+        alignItems: "center",
+        padding: "1px 0"
     },
     energyGridTitleColumn: {
-
+        flex: "1",
+        textAlign: "center",
+        border: "0.5px solid black",
+        alignItems: "center",
+        padding: "1px 0"
     },
     energyGridCell: {
-
+        flex: "1",
+        display: "flex",
+        textAlign: "center",
+        border: "0.5px solid black",
+        alignItems: "center",
+        padding: "1px 0"
     },
 
     footer: {
